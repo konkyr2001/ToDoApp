@@ -1,0 +1,227 @@
+.task {
+  position: relative;
+  display: flex;
+  justify-self: center;
+  border-radius: 10px;
+  background-color: rgb(230, 227, 227);
+  padding: 10px;
+  width: 95%;
+  transition: opacity 800ms ease, transform 1s ease;
+}
+
+.slide-animation {
+  transform: translateX(-10%);
+  opacity: 0;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.task > input[type="checkbox"] {
+  margin-left: 2px;
+  margin-right: 7px;
+  width: 20px;
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.task > input[type="text"] {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+.task > p {
+  align-self: flex-start;
+  width: 100%;
+  font-size: 16px;
+  padding-top: 3px;
+  margin: 0px 0px 0px 5px;
+  white-space: initial;
+  vertical-align: middle;
+}
+
+.task > button {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  margin: 0px 7px;
+}
+
+.fa-grip-vertical {
+  font-size: 20px;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fa-pencil {
+  font-size: 20px;
+}
+
+.edit-check {
+  font-size: 20px;
+}
+
+.fa-trash {
+  font-size: 20px;
+}
+@media (max-width: 900px) {
+  .task-list {
+    width: 100%;
+  }
+  .task-list-item {
+    width: 100%;
+  }
+  .task {
+    width: 94%;
+  }
+  .fa-grip-vertical {
+    left: -23px;
+    font-size: 18px;
+  }
+  
+  .fa-pencil {
+    font-size: 18px;
+  }
+  
+  .edit-check {
+    font-size: 18px;
+  }
+  
+  .fa-trash {
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  .task-list {
+    width: 100%;
+  }
+  .task {
+    width: 93%;
+  }
+  .task > input[type="checkbox"] {
+    width: 15px;
+  }
+  .task > input[type="text"] {
+    font-size: 15px;
+  }
+  .task > p {
+    font-size: 15px;
+  }
+
+  .task > button:nth-last-of-type(1) {
+    margin-right: 5px;
+  }
+  .task > button:nth-last-of-type(2) {
+    margin-right: 5px;
+  }
+  .fa-grip-vertical {
+    font-size: 16px;
+    left: -18px;
+  }
+  
+  .fa-pencil {
+    font-size: 16px;
+  }
+  
+  .edit-check {
+    font-size: 16px;
+  }
+  
+  .fa-trash {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .task > input[type="checkbox"] {
+    width: 11px;
+  }
+  .task {
+    width: 93%;
+  }
+  .task > input[type="text"] {
+    font-size: 12px;
+  }
+
+  .task > button:nth-last-of-type(1) {
+    margin-right: 5px;
+  }
+  .task > button:nth-last-of-type(2) {
+    margin-right: 5px;
+  }
+
+  .task > p {
+    font-size: 13px;
+    padding-top: 5px;
+  }
+
+  .fa-grip-vertical {
+    font-size: 13px;
+    left: -16px;
+  }
+  
+  .fa-pencil {
+    font-size: 13px;
+  }
+  
+  .edit-check {
+    font-size: 13px;
+  }
+  
+  .fa-trash {
+    font-size: 13px;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  .task {
+    width: 92%;
+  }
+  .task > input[type="text"] {
+    font-size: 11px;
+  }
+  .task > p {
+    font-size: 12px;
+    padding-top: 6px;
+  }
+
+  .fa-grip-vertical {
+    font-size: 12px;
+    left: -14px;
+  }
+  
+  .fa-pencil {
+    font-size: 12px;
+  }
+  
+  .edit-check {
+    font-size: 12px;
+  }
+  
+  .fa-trash {
+    font-size: 12px;
+  }
+}
+
+@media (max-height: 750px) {
+  .task {
+    padding: 5px 7px;
+  }
+}
+
+@media (max-height: 550px) {
+  .task {
+    padding: 3px 7px;
+  }
+}
+
+@media (max-height: 475px) {
+  .task {
+    padding: 0px 7px;
+  }
+}

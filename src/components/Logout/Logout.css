@@ -1,0 +1,74 @@
+.profile-container {
+  position: fixed;
+  top: 30px;
+  right: 80px;
+  width: fit-content
+}
+
+.profile-container > button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container > button > i {
+  font-size: 22px;
+}
+
+.profile0-container > button:focus {
+  background-color: none;
+}
+
+@media (max-width: 900px) {
+  .profile-container > button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile-container > button > i {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 700px) {
+  .profile-container {
+    right: 50px;
+  }
+
+  .profile-container > button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .profile-container > button > i {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile-container {
+    right: 40px;
+  }
+
+  .profile-container > button {
+    width: 33px;
+    height: 33px;
+  }
+  .profile-container > button > i {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-container {
+    right: 30px;
+  }
+
+}
+@media (max-height: 600px) {
+  .profile-container {
+    top: 25px;
+  }
+}

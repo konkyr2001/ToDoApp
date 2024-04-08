@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: ease 0.25s;
+  font-family: "Exo", sans-serif;
+}
+
+/* ================== */
+/* COLOR PALETTE STARTS */
+/* ================== */
+
+
+/* ================== */
+/* COLOR PALETTE ENDS */
+/* ================== */
+
+/* ================== */
+/* BOOTSTRAP OVERRIDES STARTS */
+/* ================== */
+.input-group-text {
+  width: 40px;
+}
+/* ================== */
+/* BOOTSTRAP OVERRIDES ENDS */
+/* ================== */
+
+.account-form {
+  display: block;
+  width: 600px;
+  border: 2px solid rgba(194, 191, 191, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.account-form > button[type="submit"] {
+  align-items: center;
+}

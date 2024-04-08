@@ -1,0 +1,160 @@
+.account > .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.input-group-text:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+  .account-form {
+    width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .invalid-feedback {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .account-form {
+    width: 350px;
+  }
+
+  #register-form > div > span {
+    font-size: 12px;
+    height: 32px;
+  }
+  #register-form > div > input {
+    font-size: 12px;
+  }
+  #register-form > .form-check > span > input {
+    font-size: 12px;
+  }
+  #register-form > .form-check > span > label {
+    font-size: 12px;
+  }
+  #register-form > div > div > button {
+    font-size: 12px;
+  }
+  #register-form > div > div > a {
+    font-size: 12px;
+  }
+
+  #login-form > div > span {
+    font-size: 12px;
+    height: 32px;
+  }
+  #login-form > div > input {
+    font-size: 12px;
+  }
+  #login-form > .form-check > span > input {
+    font-size: 12px;
+  }
+  #login-form > .form-check > span > label {
+    font-size: 12px;
+  }
+  #login-form > div > div > button {
+    font-size: 12px;
+  }
+  #login-form > div > div > a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .account-form {
+    width: 300px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  #register-form > div {
+    margin: 0px;
+  }
+
+  #register-form > div > span {
+    width: 20px;
+    font-size: 10px;
+    height: 31px;
+  }
+  #register-form > div > input {
+    font-size: 11px;
+  }
+  #register-form > .form-check > span > input {
+    font-size: 11px;
+  }
+  #register-form > .form-check > span > label {
+    font-size: 11px;
+  }
+  #register-form > div > div > button {
+    font-size: 12px;
+  }
+  #register-form > div > div > a {
+    font-size: 12px;
+  }
+
+  #login-form > div > span {
+    font-size: 12px;
+    height: 32px;
+  }
+  #login-form > div > input {
+    font-size: 12px;
+  }
+  #login-form > .form-check > span > input {
+    font-size: 12px;
+  }
+  #login-form > .form-check > span > label {
+    font-size: 12px;
+  }
+  #login-form > div > div > button {
+    font-size: 12px;
+  }
+  #login-form > div > div > a {
+    font-size: 12px;
+  }
+}
+
+@media (max-height: 450px) {
+  .account-form {
+    min-height: 250px;
+    padding: 3px;
+  }
+  h1 {
+    margin: 0px;
+  }
+  #register-form > .form-check {
+    margin-top: 0px;
+  }
+
+  #register-form > div > label {
+    margin: 0px;
+  }
+  #register-form > .form-check > span > label {
+    margin: 0px;
+  }
+  #register-form > div > div > button {
+    margin-top: -5px;
+  }
+
+  #login-form > .form-check {
+    margin-top: 0px;
+  }
+
+  #login-form > div > label {
+    margin: 0px;
+  }
+  #login-form > .form-check > span > label {
+    margin: 0px;
+  }
+  #login-form > div > div > button {
+    margin-top: -5px;
+  }
+}

@@ -1,0 +1,28 @@
+#alert {
+  z-index: 2;
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 300px; /* Set width to auto */
+  transition: opacity 1000ms ease;
+  /* opacity: 1; */
+  text-align: center;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+@media (max-width: 600px) {
+  #alert {
+    min-width: 300px;
+    font-size: 12px;
+  }
+}
+
+@media (max-height: 620px) {
+  #alert {
+    top: 50px;
+  }
+}

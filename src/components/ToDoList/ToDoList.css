@@ -1,0 +1,274 @@
+#to-do-list {
+  min-height: 600px;
+  min-width: 600px;
+  /* max-height: 800px; */
+  /* overflow: scroll; */
+}
+
+#to-do-list > .h3 {
+  color: rgb(200, 202, 204);
+}
+
+#to-do-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 784px;
+  width: 700px;
+}
+
+
+#to-do-container > p {
+  text-align: center;
+}
+.to-do-inputs {
+  position: relative;
+  margin: 25px 10px;
+}
+
+#task-input {
+  border-radius: 20px;
+  width: 97%;
+  padding-right: 25px;
+}
+
+.to-do-inputs > label {
+  text-align: center;
+}
+
+.submit-task {
+  position: absolute;
+  display: block;
+  right: 0px;
+  top: -3px;
+  width: 43px;
+  height: 43px;
+  background-color: rgb(8, 207, 8);
+}
+
+.submit-task > i {
+  font-size: 25px;
+  padding-top: 4px;
+  padding-left: 1px;
+}
+
+.task-list, .task-list-item {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.task-list {
+  width: 100%;
+  max-height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+  background-color: rgb(218, 192, 192);
+  border: 4px solid transparent;
+  border-radius: 8px;
+  background-clip: padding-box;  
+
+}
+.task-list::-webkit-scrollbar {
+  width: 16px;
+}
+
+.task-list-item {
+  width: 100%;
+}
+
+
+.task-list-item {
+  margin-left: 30px;
+  margin-top: 10px;
+  /* margin: 10px 10px 10px 30px; */
+
+}
+
+@media (max-width: 900px) {
+  .task-list-item {
+    margin-left: 25px;
+  }
+  #to-do-container {
+    padding: 20px 15px;
+  }
+  #to-do-list {
+    min-width: 500px;
+  }
+  #to-do-container {
+    width: 600px;
+  }
+
+  #task-input {
+    padding-right: 27px;
+  }
+  .task-list::-webkit-scrollbar {
+    width: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  #to-do-list {
+    min-height: 500px;
+  }
+  #to-do-container {
+    width: 500px;
+  }
+  .task-list-item {
+    margin-left: 23px;
+  }
+  .submit-task {
+    width: 38px;
+    height: 38px;
+    top: -2px;
+  }
+  .submit-task > i {
+    font-size: 22px;
+  }
+  #task-input {
+    height: 35px;
+  }
+  .to-do-inputs {
+    margin: 20px 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .task-list-item {
+    margin-left: 22px;
+  }
+  #to-do-container {
+    padding: 20px 10px;
+  }
+  #to-do-list {
+    min-width: 400px;
+  }
+  #to-do-container {
+    width: 400px;
+  }
+  .submit-task {
+    width: 34px;
+    height: 34px;
+    top: -2.5px;
+    right: 2px;
+  }
+  .h4 {
+    font-size: 22px;
+  }
+  .submit-task > i {
+    font-size: 20px;
+  }
+  #task-input {
+    height: 30px;
+    font-size: 13px;
+  }
+  .to-do-inputs > label {
+    font-size: 12px;
+  }
+  .to-do-inputs {
+    margin: 15px 10px;
+  }
+  .task-list::-webkit-scrollbar {
+    width: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  .task-list-item {
+    margin-left: 20px;
+  }
+  #to-do-list {
+    min-width: 300px;
+  }
+  #to-do-container {
+    width: 300px;
+  }
+  .h4 {
+    font-size: 20px;
+  }
+  .to-do-inputs {
+    width: 95%;
+  }
+  .to-do-inputs > label {
+    font-size: 11px;
+  }
+  .to-do-inputs {
+    margin: 18px 10px;
+  }
+  #task-input {
+    padding-right: 30px;
+  }
+}
+
+@media (max-height: 950px) {
+  #to-do-container {
+    max-height: 730px;
+  }
+  .task-list {
+    max-height: 545px;
+  }
+}
+
+@media (max-height: 800px) {
+  #to-do-container {
+    max-height: 620px;
+  }
+  .task-list {
+    max-height: 440px;
+  }
+}
+
+@media (max-height: 700px) {
+  #to-do-list {
+    min-height: 500px;
+  }
+  #to-do-container {
+    max-height: 550px;
+  }
+  .task-list {
+    max-height: 330px;
+  }
+}
+
+@media (max-height: 550px) {
+  #to-do-list {
+    min-height: 300px;
+  }
+  #to-do-container {
+    max-height: 450px;
+  }
+  .task-list {
+    max-height: 275px;
+  }
+}
+
+@media (max-height: 475px) {
+  #to-do-list {
+    min-height: 200px;
+    max-height: 330px;
+  }
+  #to-do-container {
+    max-height: 330px;
+  }
+  .task-list {
+    max-height: 210px;
+  }
+}
+
+@media (max-height: 400px) {
+  #to-do-list {
+    min-height: 200px;
+    max-height: 300px;
+  }
+  #to-do-container {
+    max-height: 300px;
+  }
+  .task-list {
+    max-height: 180px;
+  }
+}
