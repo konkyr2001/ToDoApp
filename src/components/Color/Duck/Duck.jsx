@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import duckImg from "./images/duck.png";
+import duckImg from "../../../images/duck.png";
 import duckFun from "./Duck.jsx";
 import quackAudio from "../../../audio/quack.mp3";
 import "./Duck.css";
