@@ -34,7 +34,7 @@ export default function Login({ handleLink, loginUser }) {
     const findUser = await userService
       .getUser(user)
       .then((response) => {
-        console.log("User found in login: ", response.data);
+        console.log("Correct user");
         const userId = response.data.id;
         if (loginLoggedIn) {
           localStorage.setItem("username", loginUsername);

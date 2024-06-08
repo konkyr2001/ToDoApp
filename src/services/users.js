@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = 'http://localhost:5001/api/users';
+const baseUrl = 'https://todoapp-uug3.onrender.com/api/users';
 // const baseUrl = 'http://192.168.2.3:5001/api/users';
 
 const getAll = async () => {
@@ -14,6 +14,7 @@ const getByUsername = async username => {
 
 const getUser = async user => {
   try {
+    console.log(user)
     const response = await axios.get(`${baseUrl}/username/${user.username}`);
     if (user.password === response.data.password) {
       response.data.found = true;
@@ -21,12 +22,11 @@ const getUser = async user => {
       response.data.found = false;
       throw new Error("Incorrect password");
     }
-    console.log("response.data: ",response.data)
     return response;
   } catch (error) {
     // If there's an error during the axios request or password comparison, catch it here
-    console.log("error: ",error)
-    throw ("Username or password are not correct");
+      response.data.found = false;
+      throw ("Username or password are not correct");
   }
 }
 
@@ -37,7 +37,6 @@ const getUserTasksById = async userId => {
 
 const updateUserTaskIds = async (userId, newTasks) => {
   const response = await axios.put(`${baseUrl}/${userId}`, newTasks);
-  console.log(response.data)
   return response;
 }
 

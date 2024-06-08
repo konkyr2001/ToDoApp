@@ -52,7 +52,7 @@ export default function Register({ handleLink, registerUser }) {
       const createUser = await userService
         .create(newUser)
         .then((response) => {
-          console.log("user created success: ", response.data);
+          console.log("user created success: ");
           const userId = response.data.id;
           if (registerLoggedIn) {
             localStorage.setItem("username", registerUsername);
@@ -117,7 +117,6 @@ export default function Register({ handleLink, registerUser }) {
   }
 
   function displayUsernameErrorMessage(object) {
-    console.log(object);
     const form = document.querySelector(".validated");
 
     const validation = object.validation;

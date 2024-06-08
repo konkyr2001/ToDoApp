@@ -17,7 +17,6 @@ export default function Task({ task, userId, deleteTask, delay }) {
 
   async function handleEditButton() {
     setIsEditing((prevState) => {
-      console.log(prevState);
       return !prevState;
     });
 
@@ -35,7 +34,7 @@ export default function Task({ task, userId, deleteTask, delay }) {
       };
       await taskService
         .changeTask(newTask)
-        .then((result) => console.log(result));
+        .then((result) => console.log("task changed!"));
     }
   }
 
@@ -51,14 +50,13 @@ export default function Task({ task, userId, deleteTask, delay }) {
 
   async function handleCheck() {
     setCheck((prevCheck) => !prevCheck);
-    console.log(!check);
     const newTask = {
       id: task.id,
       task: taskText,
       checked: !check,
       userId: userId,
     };
-    await taskService.changeTask(newTask).then((result) => console.log(result));
+    await taskService.changeTask(newTask).then((result) => console.log("check changed"));
   }
 
   async function handleDelete(e) {
@@ -68,7 +66,7 @@ export default function Task({ task, userId, deleteTask, delay }) {
       checked: check,
       userId: userId,
     };
-    console.log("deletedTask: ", deletedTask);
+    console.log("task deleted!");
     await taskService
       .deleteTask(deletedTask)
       .then((result) => deleteTask(deletedTask, task.id, taskRef));

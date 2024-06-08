@@ -15,7 +15,6 @@ function Account({ setUser }) {
 
   function handleUser(username, password, id) {
     setUser((prevUser) => {
-      console.log(prevUser);
       return {
         username,
         password,

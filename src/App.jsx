@@ -21,15 +21,13 @@ function App() {
       const password = localStorage.getItem("password");
       const id = localStorage.getItem("id");
 
-      console.log(username);
-      console.log(password);
-      console.log(id);
+      // console.log(username);
+      // console.log(password);
       if (
         username === "undefined" ||
         password === "undefined" ||
         id === "undefined"
       ) {
-        console.log("mpike");
         return;
       }
       setUser({
@@ -39,7 +37,6 @@ function App() {
         app: true,
       });
     }
-    console.log(localStorage.getItem("stayLoggedIn"));
   }, []);
 
   return (

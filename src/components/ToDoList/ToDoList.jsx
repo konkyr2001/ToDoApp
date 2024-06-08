@@ -34,7 +34,7 @@ export default function ToDoList({ user, setUser }) {
 
   const [tasks, setTasks] = useState(taskState.tasks);
 
-  console.log(user);
+  // console.log(user);
 
   useEffect(() => {
     async function getTasks() {
@@ -52,9 +52,7 @@ export default function ToDoList({ user, setUser }) {
         else setNoTask(true);
       } catch (error) {
         setNoTask(true);
-        console.log(
-          "mpike error sto useEffect, getTasksFromUser " + error.message
-        );
+        console.log("No tasks found!");
       }
     }
 
@@ -93,14 +91,13 @@ export default function ToDoList({ user, setUser }) {
         type: "add_new_task",
         payload: currentTask,
       });
-      console.log(currentTask);
+      console.log("task added!");
     } catch (error) {
-      console.log(error.message);
+      console.log("error on adding task!");
     }
   }
 
   function deleteTask(task, id, ref) {
-    console.log(ref.current);
     ref.current.classList.add("opacity");
     setTimeout(() => {
       ref.current.classList.remove("opacity");
@@ -127,7 +124,6 @@ export default function ToDoList({ user, setUser }) {
 
     await userService
       .updateUserTaskIds(user.id, newTasks)
-      .then((result) => console.log(result.data));
   }
   return (
     <>

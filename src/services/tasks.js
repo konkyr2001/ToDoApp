@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl = 'http://localhost:5001/api/tasks';
+const baseUrl = 'https://todoapp-uug3.onrender.com/api/tasks';
 // const baseUrl = 'http://192.168.2.3:5001/api/tasks';
 
 const getTasksFromUser = async (userId) => {
