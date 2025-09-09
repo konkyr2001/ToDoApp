@@ -1,8 +1,31 @@
-# React + Vite
+<h1>To Do App</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>🌐 Live App: <a href="https://toodledo.gr/" target="_blank">toodledo.gr</a></p> 
+<p>🖥️ Server Hosted: <a href="https://render.com/" target="_blank">Render</a></p> 
+<small><i>⚠️ Note: The free server instance may spin down after inactivity, which can cause a delay of up to 50 seconds on the first request.</i></small>
+<br></br>
+<p>Features: ✨</p>
 
-Currently, two official plugins are available:
+✅ Create an account to securely save your notes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Add unlimited notes and reorder them however you like.
+
+✅ Check off completed notes, edit them anytime, or delete them completely.
+
+✅ Personalize your experience by setting a custom background color—your preference is saved forever!
+
+Installation ⚙️
+
+- Clone or download the repository.
+
+- Navigate to the project folder in your editor.
+
+- Run npm install dependencies for both frontend and backend:
+
+- npm install (backend and frontend are on the same folder)
+
+- run project: <b>npm start</b>
+
+- run server: <b>npm run server </b>
+
+- run frontend: <b>npm run dev </b>
