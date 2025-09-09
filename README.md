@@ -20,12 +20,10 @@ Installation ⚙️
 
 - Navigate to the project folder in your editor.
 
-- Run npm install dependencies for both frontend and backend:
+- Run **npm install** dependencies for both frontend and backend
 
-- npm install (backend and frontend are on the same folder)
-
-- run project: <b>npm start</b>
-
-- run server: <b>npm run server </b>
-
-- run frontend: <b>npm run dev </b>
+<p>
+  Run Project: <b>npm start</b><br>
+  Run Server: <b>npm run server </b><br>
+  Run Frontend: <b>npm run dev </b><br>
+</p>
