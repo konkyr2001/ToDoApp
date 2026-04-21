@@ -1,6 +1,6 @@
 <h1>To Do App</h1>
 
-<p>🌐 Live App: <a href="https://toodledo.gr/" target="_blank">toodledo.gr</a></p> 
+<p>🌐 Live App: <a href="https://to-do-app-six-woad-67.vercel.app/" target="_blank">ToDoApp</a></p> 
 <p>🖥️ Server Hosted: <a href="https://render.com/" target="_blank">Render</a></p> 
 <small><i>⚠️ Note: The free server instance may spin down after inactivity, which can cause a delay of up to 50 seconds on the first request.</i></small>
 <br></br>
